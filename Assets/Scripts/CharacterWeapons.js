@@ -29,8 +29,5 @@ function Update () {
 	if (Input.GetButton("Fire1") && arrowDrawForce < 1) {
 		arrowDrawForce += arrowPullSpeed * Time.deltaTime;
 	}
-	else
-	{
-		Debug.Log("Kan ikke strækkes mere!");
-	}
+	
 }

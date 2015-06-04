@@ -17,7 +17,7 @@ function Update () {
 function OnCollisionEnter (collision : Collision) {
 	
 	rotate = false;
-	Debug.Log("Collision!");
+	//Debug.Log("Collision!");
 	
 	if (collision.relativeVelocity.magnitude > 7) {
 		GetComponent.<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
