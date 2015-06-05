@@ -22,7 +22,7 @@ function Update () {
 		arrowSpawned.GetComponent.<Rigidbody>().AddForce(bow.transform.forward * arrowForce * arrowDrawForce);
 		
 		arrowDrawForce = 0;
-		gameObject.GetComponent.<AudioSource>().PlayOneShot(bowRealeaseSounds[Random.Range(0,bowRealeaseSounds.Length)],1.0);
+		bow.GetComponent.<AudioSource>().PlayOneShot(bowRealeaseSounds[Random.Range(0,bowRealeaseSounds.Length)],1.0);
 	}
 	
 	//Når man trækker tilbage
